@@ -1,0 +1,44 @@
+@import "./header.css";
+@import "./intro.css";
+@import "./experiencia.css";
+@import "/css/formacao.css";
+@import "/css/footer.css";
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+a {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#seta {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  z-index: 2;
+  opacity: 50%;
+}

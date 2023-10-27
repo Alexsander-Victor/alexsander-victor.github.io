@@ -1,0 +1,214 @@
+.formacao {
+  background: linear-gradient(180deg, #2b2b2b 0%, #0c0c0c 102.04%);
+  padding-top: 70px;
+  margin-top: -30px;
+  padding-bottom: 60px;
+}
+
+.formacao-conteiner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+  gap: 50px;
+  padding: 20px;
+  position: relative;
+}
+
+.formacao-conteiner .subtitulo {
+  color: var(--c8, #7a7a7a);
+  padding-bottom: 50px;
+}
+
+.formacao-texto {
+  color: var(--c6, #a3a3a3);
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px; /* 133.333% */
+  padding-bottom: 50px;
+}
+
+.formacao-texto strong {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.faculdade-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-right: 300px;
+}
+
+.faculdade {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #090909;
+}
+
+.faculdade:hover {
+  transform: translateX(30px);
+  box-shadow: 0 0 5px #00e0b8;
+  border: 1px solid var(--c3, #00e0b8);
+  transition: 0.4s;
+}
+
+.faculdade-nivel {
+  color: var(--c6, #a3a3a3);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 100% */
+}
+
+.faculdade-curso {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px; /* 113.636% */
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.faculdade-curso::before {
+  content: "";
+  width: 8px;
+  height: 20px;
+  background: var(--g2, linear-gradient(180deg, #00fff0 0%, #00e0b8 100%));
+  position: absolute;
+  left: -30px;
+}
+
+.faculdade-instituicao {
+  color: var(--c6, #a3a3a3);
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 111.111% */
+}
+
+.line {
+  width: 4px;
+  height: 640px;
+  flex-shrink: 0;
+  background: var(--c12, #292929);
+  position: absolute;
+  left: 620px;
+}
+
+.formacao-extra {
+  margin-left: 100px;
+  margin-top: 250px;
+}
+
+.formacao-extra h3 {
+  color: var(--c7, #8f8f8f);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.48px;
+  padding: 20px;
+  position: relative;
+}
+
+.formacao-extra li {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 111.111% */
+  padding: 20px;
+}
+
+.formacao-extra span {
+  color: var(--c7, #8f8f8f);
+}
+
+.cursos {
+  margin-bottom: 50px;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cursos h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -20px;
+  background: url("../img/livro.svg") no-repeat center center;
+}
+
+.idiomas h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -20px;
+  background: url("../img/ingles.svg") no-repeat center center;
+}
+
+@media (max-width: 950px) {
+  .line {
+    left: 520px;
+  }
+  .formacao-extra {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .formacao-conteiner {
+    grid-template-columns: 1fr;
+  }
+
+  .line {
+    display: none;
+  }
+  .faculdade-lista {
+    padding-right: 0;
+  }
+
+  .formacao-extra {
+    margin-top: 0;
+  }
+  .faculdade:hover {
+    transform: none;
+    box-shadow: none;
+    border: 1px solid #000;
+    transition: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .formacao-texto {
+    font-size: 18px;
+  }
+  .formacao-texto strong {
+    font-size: 18px;
+  }
+}

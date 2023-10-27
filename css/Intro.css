@@ -1,0 +1,149 @@
+.intro {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  /* padding-top: 100px; */
+  /* align-items: start; */
+}
+
+.intro h1 {
+  padding-top: 80px;
+  color: var(--c13, #141414);
+  font-family: Poppins;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px; /* 111.111% */
+  position: relative;
+}
+
+.foto {
+  border-radius: 100px 20px;
+}
+
+.intro span {
+  content: "";
+  background: var(--g2, linear-gradient(180deg, #00fff0 0%, #00e0b8 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Poppins;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  /* line-height: 80px; */
+}
+
+.intro h1::before {
+  content: "";
+  display: block;
+  left: -50px;
+  bottom: 70px;
+  background: url("/img/detalhe.svg") no-repeat center;
+  position: absolute;
+  z-index: -1;
+  width: 120px;
+  height: 110px;
+}
+
+.intro p {
+  color: var(--c11, #3d3d3d);
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: 40px;
+}
+
+@media (max-width: 965px) {
+  .intro h1 {
+    margin-top: -50px;
+    margin-left: 20px;
+  }
+
+  .intro p {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .intro h1::before {
+    height: 270px;
+  }
+
+  .foto {
+    padding-left: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro {
+    margin-top: -80px;
+  }
+
+  .intro h1 {
+    font-size: 58px;
+    letter-spacing: -1px;
+    line-height: 70px;
+  }
+  .intro h1::before {
+    width: 30px;
+    height: 20px;
+    top: 105px;
+    left: -30px;
+  }
+  .intro p {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .intro h1 {
+    margin-top: -70px;
+    font-size: 48px;
+    line-height: 50px;
+  }
+
+  .intro span {
+    font-size: 38px;
+  }
+
+  .intro h1::before {
+    width: 20px;
+    height: 10px;
+    top: 100px;
+    left: -30px;
+  }
+  .intro p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .foto {
+    display: none;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+  }
+  .intro h1 {
+    margin-top: -90px;
+    font-size: 54px;
+    line-height: 70px;
+  }
+
+  .intro h1::before {
+    background: url("/img/Detalhe-S.svg") no-repeat center;
+    width: 120px;
+    height: 130px;
+    top: 45px;
+    left: -45px;
+  }
+
+  .intro span {
+    font-size: 54px;
+  }
+}
